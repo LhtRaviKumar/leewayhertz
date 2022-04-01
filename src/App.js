@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Customer from "./Customer";
+import Industries from "./Industries";
+import Insights from "./Insights";
+import Nav from "./Nav";
+import News from "./News";
+import Slide1 from "./Slide1";
+import Technologies from "./Technologies";
+import Work from "./Work";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}
+      <Nav />
+      <Slide1 />
+      <img className="mt-10 hidden lg:flex" src="slideclients.png" alt=""></img>
+      {/* companies */}
+      <Technologies />
+      <Industries />
+      <Work />
+      <Insights />
+      <Customer />
+      <News />
+    </>
   );
 }
 
